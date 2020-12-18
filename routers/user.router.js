@@ -3,4 +3,6 @@ module.exports = app => {
 
 	// Create a new Customer
 	app.post("/users", users.create);
+
+	app.get("/users/pdf", users.createPdf);
 };
